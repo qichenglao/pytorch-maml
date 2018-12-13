@@ -1,3 +1,9 @@
+data/
+logs/
+output/
+
+.idea
+
 # Compiled/cached Python
 __pycache__/
 *.py[cod]

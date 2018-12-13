@@ -6,7 +6,7 @@ from collections import OrderedDict
 import torch
 import torch.nn as nn
 
-from layers import *
+from src.layers import *
 
 class OmniglotNet(nn.Module):
     '''
@@ -69,7 +69,7 @@ class OmniglotNet(nn.Module):
         torch.manual_seed(1337)
         torch.cuda.manual_seed(1337)
         torch.cuda.manual_seed_all(1337)
-        print 'init weights'
+        print('init weights')
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels

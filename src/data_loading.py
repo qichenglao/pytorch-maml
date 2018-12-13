@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 from torch.utils.data.sampler import Sampler
 import torchvision.transforms as transforms
 
-from dataset import Omniglot, MNIST
+from src.dataset import Omniglot, MNIST
 
 '''
 Helpers for loading class-balanced few-shot tasks
